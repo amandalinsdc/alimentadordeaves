@@ -1,0 +1,142 @@
+tto<!DOCTYPE html>
+<html>
+<iframe name="frame" style="display:none;"></iframe>
+
+<head>
+<title>Peri's Feeder</title>
+<link href='https://fonts.googleapis.com/css?family=Carrois Gothic SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Arima Madurai' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<style>
+			body{background-color: #002f2f}
+			input{color:gray}
+			.h2 {display:block}
+			.h3 {display:none}
+			.sel1{width:5%;}
+			.agend_horarios{
+				font-size: 18px;
+				font-family: 'Carrois Gothic SC';
+			}
+			.container-fluid{
+				padding:0px;
+				margin:0px;
+				text-align: center;
+			}
+			.topo{
+				width: 100%;
+				height: 110px;
+				padding-top: 20px;
+				color: #08343f;
+				background-color: #e6e2af;
+				font-family: 'Carrois Gothic SC'; font-size: 22px;
+			}
+			.conteudo-top{
+				font-family: 'Arima Madurai';font-size: 18px;
+			  width:100%;
+			  height:20%;
+				display: inline-block;
+				color: #e6e2af;
+  		}
+			.conteudo-bottom{
+				font-family: 'Arima Madurai';font-size: 18px;
+			  width:100%;
+			  height:50%;
+				display: inline-block;
+				color: #e6e2af;
+			}
+			.porcao{
+				font-family: 'Carrois Gothic SC';
+				font-size: 18px;
+				color: #e6e2af;
+			}
+			.h_1{
+				display: inline-block;
+				padding-right: 30px;
+			}
+			.h_2{
+				display: inline-block;
+				padding-right: 30px;
+			}
+			.h_3{display: inline-block}
+
+			/*Responsividade*/
+
+			@media only screen and (max-width: 650px) {
+				.porcao{font-size: 19px}
+				.agend_horarios{font-size: 19px}
+				.conteudo-top{height: 45%}
+				.conteudo-bottom{height:45%}
+				.topo{font-size: 19px}
+				.h2 {display:none}
+				.h3 {display:block}
+				.sel1{width: 18%;}
+				.h_2{padding-right: 8px;}
+				.h_1{padding-right: 8px;}
+			}
+			@media only screen and (max-width: 339px) {
+				.porcao{font-size: 16px;}
+				.topo{ font-size: 19px;}
+				.sel1{width: 20%;}
+			}
+</style>
+</head>
+		<body>
+			<div class="container-fluid">
+
+				<header class="topo">
+					<h2 class="h2">Alimente seu Pet</h2>
+					<h3 class="h3">Alimente seu Pet</h3>
+				</header>
+
+				<div>
+					<div class="conteudo-top">
+						<h4>
+							<h3 class="alimentar">Alimente seu bichinho agora!</h3>
+							<form action="json_horarios.php" method="get" target="frame">
+							<h3 class="porcao" >Porção:
+							<select class="form-control sel1" style="display: inline-block;" name="porcao">
+								<option>1</option>
+								<option>1/2</option>
+								<option>1/8</option></h3>
+							</select>
+							<br><br>
+							<input class="btn btn-warning btn-lg" type="submit" value="Alimentar!" style="color:#002f2f;font-weight: bold;">
+					</div>
+					<br><br>
+					<span style="color:white; font-size:22px">᠁</span>
+					<div class="conteudo-bottom">
+
+							<h3 class="alimentar">Agende a alimentação do seu bichinho!</h3>
+							<div class="horarios">
+								<div class="h_1">
+									<h4>
+										<h5 class="agend_horarios">▹ 1º Horário</h5>
+										<h5><input type="number" placeholder="HH" style="width:40px" name="h1" min="0" max="23"/> : <input type="number" placeholder="MM" style="width:45px;" name="m1" min="0" max="59"/> min</h5>
+									</h4>
+								</div >
+								<div class="h_2">
+									<h4 style="float:left">
+										<h5 class="agend_horarios">▹ 2º Horário</h5>
+										<h5><input type="number" placeholder="HH" style="width:40px" name="h2" min="0" max="23"/>  : <input type="number" placeholder="MM" style="width:45px" name="m" min="0" max="59"/> min</h5>
+									</h4>
+								</div>
+								<div class="h_3">
+									<h4 style="float:left">
+										<h4 class="agend_horarios">▹ 3º Horário</h4>
+										<h5><input type="number" placeholder="HH" style="width:40px" name="h3" min="0" max="23"/> : <input type="number" placeholder="MM" style="width:45px" name="m3" min="0" max="59"/> min</h5>
+									</h4>
+								</div>
+							</div>
+						</div>
+						<br><br>
+						<input class="btn btn-warning btn-lg porcao" type="submit" value="Gravar Horários" style="color:#08343f;font-weight: bold;">
+					</form>
+				</div>
+				</div>
+
+			</div>
+</body>
+</html>

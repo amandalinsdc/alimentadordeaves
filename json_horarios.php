@@ -1,5 +1,4 @@
 <?php
-echo "teste";
 require("phpMQTT.php");
 
 $server = "ifce.sanusb.org";     // change if necessary
@@ -54,8 +53,6 @@ ini_set('default_charset','UTF-8'); // corrigir acentuação dos caracteres no p
 header('Content-Type: text/html; charset=utf-8'); // acentuação dos caracteres no html.
 
 // inicio mqtt
-
-
 
 $mqtt = new phpMQTT($server, $port, $client_id);
 

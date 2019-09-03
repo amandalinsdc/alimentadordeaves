@@ -3,7 +3,7 @@
 
 - Projeto desenvolvido para a disciplina de Microcontroladores do IFCE - (Computação 2018.1). 
 - Materiais necessários: ESP8266, motor de passo, módulo *easydriver*, *protoboard* e *jumpers*. 
-- Conhecimentos básicos em IoT, Protocolo MQTT, Arduino IDE e lingugem C.
+- Conhecimentos básicos em IoT, Protocolo MQTT, Arduino IDE e linguagem C.
 - Acesse a página do alimentador em: http://ifce.sanusb.org/amanda/alimentadorpets.html
 
 
